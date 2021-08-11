@@ -1,5 +1,5 @@
 package com.ljt.base;
-import java.io.*;
+
 public class EmployeeTest {
     public static void main(String[] args) {
          Employee empOne = new Employee("RUNOOB1");
@@ -14,5 +14,7 @@ public class EmployeeTest {
          empTwo.empDesignation("菜鸟程序员");
          empTwo.empSalary(500);
          empTwo.printEmployee();
+
+
     }
 }
