@@ -1,2 +1,10 @@
-package com.ljt.base;public class DateDemo {
+package com.ljt.base;
+
+import java.util.Date;
+
+public class DateDemo {
+    public static void main(String[] args) {
+         Date date = new Date();
+         System.out.println(date.toString());
+    }
 }
