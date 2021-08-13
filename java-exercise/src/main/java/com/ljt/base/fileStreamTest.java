@@ -63,12 +63,12 @@ public class fileStreamTest {
 }
 */
 
-
+/*
 import java.io.File;
 
 public class fileStreamTest{
     public static void main(String[] args) {
-    String dirname = "/desktop";
+    String dirname = "/G:\\求是"; //粘贴地址
     File f1 = new File(dirname);
     if (f1.isDirectory()){
         System.out.println("目录" + dirname);
@@ -86,4 +86,29 @@ public class fileStreamTest{
         System.out.println(dirname + "不是一个目录");
     }
 }
+}
+*/
+
+
+import java.io.File;
+
+public class fileStreamTest{
+    public static void main(String[] args) {
+        File folder = new File("/tmp/java/");
+        deleteFolder(folder);
+    }
+
+    public static void deleteFolder(File folder){
+        File[] files = folder.listFiles();
+        if (files != null) {
+            for (File f : files) {
+                if (f.isDirectory()){
+                    deleteFolder(f);
+                }else {
+                    f.delete();
+                }
+            }
+        }
+        folder.delete();
+    }
 }
