@@ -27,7 +27,7 @@ public class fileStreamTest {
 */
 
 
-/*
+
 import java.io.*;
 
 public class fileStreamTest {
@@ -56,12 +56,12 @@ public class fileStreamTest {
             sb.append((char)reader.read());
 
         }
-        System.out.println(sb,toString());
+        System.out.println(sb.toString());
         reader.close();
         fip.close();
     }
 }
-*/
+
 
 /*
 import java.io.File;
@@ -89,7 +89,7 @@ public class fileStreamTest{
 }
 */
 
-
+/*
 import java.io.File;
 
 public class fileStreamTest{
@@ -112,3 +112,6 @@ public class fileStreamTest{
         folder.delete();
     }
 }
+
+
+ */
